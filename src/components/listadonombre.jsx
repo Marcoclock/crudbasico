@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 
-const listadonombre = () => {
+const Listadonombre = () => {
 
     return (
+        
         <div>
             <h2>Aplicacion de crud basica</h2>
             <div className='row'>
@@ -24,4 +25,4 @@ const listadonombre = () => {
 
 }
 
-export default listadonombre
+export default Listadonombre

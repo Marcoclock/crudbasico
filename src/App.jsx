@@ -1,11 +1,11 @@
 import React from "react";
-import listadonombre from './components/listadonombre.jsx'
+import Listadonombre from './components/Listadonombre.jsx'
 
 function App() {
     return (
     <div className="container">
        
-        <listadonombre/>
+        <Listadonombre/>
 
     </div>
     );
