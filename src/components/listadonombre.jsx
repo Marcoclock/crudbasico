@@ -6,15 +6,17 @@ const Listadonombre = () => {
     const [nombre, setNombre] = useState('')
     const [Listadonombre, setListadonombre] = useState([])
 
-    const addNombre = (e) =>{
+    const addNombre = (e)=>{
         e.preventDefault();
-        const nuevoNombre={
+        const nuevoNombre = {
             id:uniqid(),
             tituloNombre:nombre
         }
-        setListadonombre ([...Listadonombre,nuevoNombre]);
+        setListadonombre ([...Listadonombre, nuevoNombre])
         setListadonombre ("")
         }
+
+
     return (
         
         <div>
@@ -22,10 +24,12 @@ const Listadonombre = () => {
             <div className='row'>
                 <div className='col'>
                     <h2>listado de nombres</h2>
-                    <ul className='list-group'>
+                    <ul className='list-group'> 
                         {
                         Listadonombre.map(item =>
-                        <li key="{item.id}" className="list-group-item">{item.tituloNombre}</li>)
+                        <li key="{item.id}" className="list-group-item">{item.tituloNombre}</li>
+                        
+                        )
                     }
                     </ul>
                     </div>
